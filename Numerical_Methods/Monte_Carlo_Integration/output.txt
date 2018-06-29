@@ -1,0 +1,13 @@
+
+f(x) = arctan(exp(x)) integrated from -2 to 2 is found to be
+I = 3.14154 +- 0.00175449
+With Monte-carlo using N = 1000000 points
+
+f(x) = 1 integrated for r = [0,1] and phi = [0, 2*Pi] found to be
+I = 3.14285 +- 0.00181399
+With Monte-carlo using N = 1000000 pooints
+
+f(x) = 1 / (1 - cos(x)*cos(y)*cos(z)) / Pi^3 integrated from -Pi to Pi in x, y, and z is found to be
+I = 1.37714 +- 0.00520806
+With Monte-carlo using N = 1000000 points
+

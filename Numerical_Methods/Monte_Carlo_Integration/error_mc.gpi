@@ -1,0 +1,10 @@
+set terminal svg size 800,600 background rgb "white" font "Times,16"
+set out "error_mc.svg"
+set log xy
+
+set xlabel "Nr. of points in MC (N)"
+set ylabel "Error of MC"
+set grid
+set box
+
+plot "error_mc.txt" using 1:2 with lines title "Error of Monte-Carlo", 1/sqrt(x)

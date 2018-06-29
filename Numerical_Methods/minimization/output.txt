@@ -1,0 +1,32 @@
+
+Finding minimum of Rosenbrock function f(x,y) = (1-x)^2+100*(y-x^2)^2 
+The solution is found to be (x,y) = 
+1
+1
+converging in 13 steps.
+
+Finding minimum of Himmelblau function f(x,y) = (x^2+y-11)^2 + (x+y^2-7)^2 
+The solution is found to be (x,y) = 
+-2.8
+3.1
+converging in 3 steps.
+
+Finding minimum of Rosenbrock function f(x,y) = (1-x)^2+100*(y-x^2)^2 
+The solution is found to be (x,y) = 
+1
+1
+converging in 9733 steps.
+
+Finding minimum of Himmelblau function f(x,y) = (x^2+y-11)^2 + (x+y^2-7)^2 
+The solution is found to be (x,y) = 
+-2.8
+3.1
+converging in 14 steps.
+
+Fitting function to data 
+The solution is found to be (A,T,B) = 
+3.6
+3.2
+1.2
+converging in 439 steps.
+

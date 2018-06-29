@@ -1,0 +1,9 @@
+set term svg size 800,600 background rgb "white" font "Times,16"
+set output "fit2.svg"
+
+set xlabel "x"
+set ylabel "y"
+set grid
+
+plot "fit2.txt" index 0 using 1:2:3 with errorbars title "Data" lt rgb "red",  "fit2.txt" index 1 using 1:2 with lines title "Fit" lw 2 lt rgb "black", "fit2.txt" index 1 using ($1):($2+$3) with lines title "Fit+df" lw 1 lt rgb "black", "fit2.txt" index 1 using ($1):($2-$3) with lines title "Fit-df" lw 1 lt rgb "black"
+

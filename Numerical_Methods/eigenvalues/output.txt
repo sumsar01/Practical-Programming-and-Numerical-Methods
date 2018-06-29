@@ -1,0 +1,44 @@
+
+Testing Jacobi diagonalization with sweeps.
+Random 3x3 matrix A found to be: 
+A = 
+3.4	-1.1	2.8	
+-1.1	3.4	3	
+2.8	3	3.4	
+
+A decomposed into V D V^T via Jacobi diagonalization using sweeps.
+ V = 
+0.53	-0.72	0.44	
+0.53	0.69	0.49	
+-0.66	-0.024	0.75	
+D = 
+-1.3	0	0	
+0	4.5	0	
+0	0	7	
+
+V^T A V = 
+-1.3	-0.072	-0.0023	
+-0.072	4.5	-0	
+-0.0023	-0	7	
+
+Testing Jacobi diagonalization with ev by ev.
+Random 3x3 matrix A found to be: 
+A = 
+4.1	-3	-1.6	
+-3	4.1	2.7	
+-1.6	2.7	4.1	
+
+A decomposed into V D V^T via Jacobi diagonalization using ev by ev.
+ V = 
+0.69	-0.51	-0.51	
+0.69	0.24	0.68	
+-0.22	-0.82	0.52	
+D = 
+0.92	0	0	
+0	2.4	0	
+0	0	9	
+
+V^T A V = 
+0.92	-0.36	-0.58	
+-0.36	2.4	-0	
+-0.58	-0	9	

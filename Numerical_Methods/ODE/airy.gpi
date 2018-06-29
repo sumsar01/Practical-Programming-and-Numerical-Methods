@@ -1,0 +1,11 @@
+set terminal svg size 800,600 background rgb "white" font "Times,16"
+set output "airy.svg"
+
+set xlabel "x"
+set ylabel "y"
+set grid
+set box
+set xrange [-15:6]
+set title "Airy function Ai(x) (y->0 for t->inf)"
+
+plot "airy.txt" index 0 using 1:2 with lines title "Ai(x)" lw 2 lt rgb "black"

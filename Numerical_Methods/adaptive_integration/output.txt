@@ -1,0 +1,32 @@
+
+f(x) = sqrt(x) integrated from 0 to 1 is found to be
+I = 0.666667
+
+f(x) = 1/sqrt(x) integrated from 0 to 1 is found to be
+I = 2
+
+f(x) = log(x)/sqrt(x) integrated from 0 to 1 is found to be
+I = -4
+
+f(x) = 4*sqrt(1 - (1-x)^2) integrated from 0 to 1 is found to be
+I = 3.1415926576917723168
+I-Pi = 4.1019792007546129753e-09
+In 560 function calls, with an accuracy of eps = 1e-6 and acc = 1e-6.
+
+
+f(x) = exp(-x) integrated from 0 to inf is found to be
+I = 1
+In 436 function calls, with an accuracy of eps = 1e-6 and acc = 1e-6.
+
+And with gsl integrator.
+I = 1
+In 105 function calls
+
+
+f(x) = exp(-x^2)/sqrt(Pi) integrated from -inf to inf is found to be
+I = 0.999979
+In 976 function calls, with an accuracy of eps = 1e-6 and acc = 1e-6.
+And with gsl integrator.
+I = 1
+In 210 function calls
+
