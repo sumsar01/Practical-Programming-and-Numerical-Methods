@@ -1,0 +1,12 @@
+solution x to Mx=b
+-1.1379
+-2.83303
+0.851459
+result of b with solution
+6.23
+5.37
+2.29
+b should be
+ 6.23
+ 5.37 
+ 2.29

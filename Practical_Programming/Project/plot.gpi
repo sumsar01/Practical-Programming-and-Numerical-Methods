@@ -1,0 +1,12 @@
+set terminal pdf
+set out "plot.pdf"
+set grid
+set xlabel "x"
+set ylabel "ln(x)"
+set tics
+set key bottom
+set xrange [0:2.05]
+set yrange [-3.05:1.05]
+set title 'Natural logarithm (root finding)'
+plot 'data' index 0 with lines title 'Natural log' \
+, 'data' index 1 with points title 'ln(x) from math.h'

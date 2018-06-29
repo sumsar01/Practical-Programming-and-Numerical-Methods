@@ -1,0 +1,6 @@
+testing nvector_alloc...
+test passed
+testing nvector_set and nvector_get...
+testing nvector_dot_product
+a*b should	=0.3088410.7278960.06622370.2133950.264464
+a*b actually	=0.3088410.7278960.06622370.2133950.264464

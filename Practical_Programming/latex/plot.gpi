@@ -1,0 +1,12 @@
+set term pdf
+set out "plot.pdf"
+set xrange [-3:3]
+set yrange [-1.05:1.05]
+set grid
+set size .7,.7
+set tics
+set key left
+set xlabel "x"
+set ylabel "erf(x)"
+plot \
+ "data" using 1:2 with lines title "Error function" lc rgb "red" \

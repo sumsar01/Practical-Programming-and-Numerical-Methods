@@ -1,0 +1,11 @@
+set terminal svg size 800,600 background rgb "white" font "Times,16"
+set output 'harm.gpi'
+set xrange [0:8]
+set yrange [0:0.4]
+set grid
+set tics
+set key
+set xlabel "r /a_0"
+set ylabel "psi ./a_0⁻¹"
+set title "Radial wavefunction for hydrogen ground state."
+plot 'data.dat' index 0 with lines lc rgb "black" title "Numeric Psi", 'data.dat' index 1 with points lc rgb "red"  title "Analytical Psi"

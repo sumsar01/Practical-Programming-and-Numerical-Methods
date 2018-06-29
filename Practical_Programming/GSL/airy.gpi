@@ -1,0 +1,11 @@
+set terminal svg size 800,600 background rgb "white" font "Times,16"
+set out "airy.svg"
+set xlabel "x"
+set ylabel "y"
+set key noenhanced
+set key bottom
+set grid
+set tics out
+plot [-6:3][-0.8:0.8] \
+	 "airy.data" using 1:2 with lines title 'Airy Ai' \
+	,"airy.data" using 1:3 with lines title 'Airy Bi' \

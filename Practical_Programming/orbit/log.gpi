@@ -1,0 +1,7 @@
+set terminal svg size 800,600 background rgb "white" font "Times,16"
+set out 'log.svg'
+set xlabel 'x'
+set ylabel 'y'
+set title 'my log compared to analytical logistical function'
+plot 'log.dat' index 0 with lines title 'mylog' \
+	, 'log.dat' index 1 with points title 'analytical func'

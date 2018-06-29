@@ -1,0 +1,48 @@
+set terminal svg size 800,600 background rgb "white" font "Times,16"
+set output 'orbit1.svg'
+set xrange [-1.15:1.15]
+set yrange [-1.15:1.15]
+set grid
+set tics
+set key 
+set xlabel "x"
+set ylabel "y"
+set title "Newtonian  circular orbit"
+plot 'orbit.dat' index 0 using (1/$2)*sin($1):(1/$2)*cos($1) with lines title 'Orbit'   \
+ , "-" with points pt 5 title "Star"
+0 0
+e
+
+set terminal svg size 800,600 background rgb "white" font "Times,16"
+set output 'orbit2.svg'
+set xrange [-0.9:2.15]
+set yrange [-1.5:1.5]
+set grid
+set tics
+set key
+set xlabel "x"
+set ylabel "y"
+set title "Newtonian  elliptocal orbit"
+plot 'orbit.dat' index 1 using (1/$2)*sin($1) : (1/$2)*cos($1) with lines title 'Orbit' \
+, "-" with points pt 5 title "Star"
+0 0
+e
+
+set terminal svg size 800,600 background rgb "white" font "Times,16"
+set output 'orbit3.svg'
+set xrange [-1.00:2.1]
+set yrange [-2.1:1.5]
+set grid
+set tics
+set key
+set xlabel "x"
+set ylabel "y"
+set title "Relativistic orbit"
+plot 'orbit.dat' index 2 using (1/$2)*sin($1) : (1/$2)*cos($1) with lines title 'Orbit'  \
+, "-" with points pt 5 title "Star"
+0 0
+e
+
+
+
+

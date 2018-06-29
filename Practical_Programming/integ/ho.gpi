@@ -1,0 +1,11 @@
+set terminal svg
+set output 'ho.svg'
+set xrange [0:5]
+set yrange [0:2]
+set grid 
+set tics
+set key
+set xlabel "Alpha"
+set ylabel "Energy"
+set title "Variational method on harmonic oscillator"
+plot 'ho.dat' with lines lc rgb "red"

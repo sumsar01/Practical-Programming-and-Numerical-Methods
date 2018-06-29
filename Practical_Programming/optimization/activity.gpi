@@ -1,0 +1,12 @@
+set terminal svg size 800,600 background rgb "white" font "Times,16"
+set output 'activity.svg'
+set xrange [0:9.5]
+set yrange [1:6]
+set grid 
+set tics
+set key
+set xlabel "Time"
+set ylabel "Activity"
+set title "Activity of radioactive material"
+plot 'opg2.txt' index 0 with errorbars lc rgb "red" title "Experimental data"\
+, 'opg2.txt' index 1 with lines lc rgb "black" title "Exponential fit"

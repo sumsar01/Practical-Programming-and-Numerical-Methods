@@ -1,0 +1,3 @@
+Root finder success.
+The energy was found to be E = -0.499975
+
