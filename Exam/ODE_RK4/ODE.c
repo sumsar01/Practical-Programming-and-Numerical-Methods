@@ -61,8 +61,6 @@ int rkstep4(double t, double h, gsl_vector* y, void f(double t, gsl_vector* y, g
 
 	error = vector_sum(y2, -1./15, y, 1./15);
 	if(error == -1) return -1;
-//printf("%g, %g\n", gsl_vector_get(y2, 0), gsl_vector_get(y2, 1));
-
 
 	error = vector_copy(y2, err);
 	if(error == -1) return -1;
@@ -95,9 +93,7 @@ int driver(double* t, double b, double* h, gsl_vector* y, double acc, double eps
 
 		tau = (eps*y_norm + acc)*sqrt(*h/(b-a));
 
-//printf("tau = %g, err_norm = %g\n",tau, err_norm);
 		if(tau > err_norm){
-			//vector_copy(yh, y);
 			*t = *t + *h;
 		}
 
@@ -105,8 +101,6 @@ int driver(double* t, double b, double* h, gsl_vector* y, double acc, double eps
 		if(fabs(*t + *h) > fabs(b)){*h = b - *t;}
 
 	}while(iterations < 1e6 && fabs(*t - b) > 1e-6);
-
-//printf("t = %g, b = %g\n", *t-b, b);
 
 	if(iterations == 1e6){
 		fprintf(stderr, "error in driver: did not converge after %i cycles\n", iterations);
